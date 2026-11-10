@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>JusAbPOS.Services</RootNamespace>
+    <AssemblyName>JusAbPOS.Services</AssemblyName>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JusAbPOS.Domain\JusAbPOS.Domain.csproj" />
+    <ProjectReference Include="..\JusAbPOS.Data\JusAbPOS.Data.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,97 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>JusAbPOS.WinForms</RootNamespace>
+    <AssemblyName>JusAbPOS.WinForms</AssemblyName>
+    <LangVersion>7.3</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Product>JusAbPOS</Product>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JusAbPOS.Domain\JusAbPOS.Domain.csproj" />
+    <ProjectReference Include="..\JusAbPOS.Data\JusAbPOS.Data.csproj" />
+    <ProjectReference Include="..\JusAbPOS.Services\JusAbPOS.Services.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="ProductEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProductEditorForm.Designer.cs">
+      <DependentUpon>ProductEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="StockAdjustForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StockAdjustForm.Designer.cs">
+      <DependentUpon>StockAdjustForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UserEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserEditorForm.Designer.cs">
+      <DependentUpon>UserEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="DashboardView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DashboardView.Designer.cs">
+      <DependentUpon>DashboardView.cs</DependentUpon>
+    </Compile>
+    <Compile Update="PosView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="PosView.Designer.cs">
+      <DependentUpon>PosView.cs</DependentUpon>
+    </Compile>
+    <Compile Update="InventoryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="InventoryView.Designer.cs">
+      <DependentUpon>InventoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Update="AnalyticsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AnalyticsView.Designer.cs">
+      <DependentUpon>AnalyticsView.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UsersView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UsersView.Designer.cs">
+      <DependentUpon>UsersView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
